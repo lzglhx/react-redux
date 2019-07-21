@@ -1,5 +1,4 @@
-react调试工具：https://www.sogou.com/link?url=hedJjaC291OB0PrGj_c3jLEFOfDkmI-hxFdQfPeArFQf-rzzvQJwKLU6DtrNzhoziA90pTyQ5SH7SJbqA3gZhQ..
-
+react调试工具：[https://blog.csdn.net/one_girl/article/details/80916232]
 
 # react脚手架
   - xxx 脚手架: 用来帮助程序员快速创建一个基于 xxx 库的模板项目
