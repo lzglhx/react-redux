@@ -119,3 +119,20 @@ react调试工具：[https://blog.csdn.net/one_girl/article/details/80916232]
      * componentDidMount(): 开启监听, 发送 ajax 请
      * componentWillUnmount(): 做一些收尾工作, 如
      * componentWillReceiveProps(): 后面需要时讲
+
+# axios 
+  - 文档; [https://github.com/axios/axi]
+  - get请求
+      axios.get(url).then(response => {
+        console.log(response)
+      }).catch(error => {
+        console.log(error)
+      })
+    }
+  - post请求
+      axios.post(url, {firstName: 'Fred'}).then(response => {
+        console.log(response)
+      }).catch(error => {
+        console.log(error)
+      })
+     }
