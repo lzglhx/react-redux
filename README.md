@@ -126,13 +126,17 @@ react调试工具：[https://blog.csdn.net/one_girl/article/details/80916232]
       axios.get(url).then(response => {
         console.log(response)
       }).catch(error => {
-        console.log(error)
+        console.log(error.message)
       })
     }
   - post请求
       axios.post(url, {firstName: 'Fred'}).then(response => {
         console.log(response)
       }).catch(error => {
-        console.log(error)
+        console.log(error.message)
       })
      }
+
+# Fetch请求
+  - 文档：[https://github.github.io/fetch/]
+  - 博客：[https://segmentfault.com/a/1190000003810652]
