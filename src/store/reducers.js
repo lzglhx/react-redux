@@ -13,6 +13,7 @@ const comments = (state = [], action) => {
       return action.data;
     case DELETE_COMMENT:
       return state.filter((c, index) => index !== action.data);
+
     default:
       return state;
   }

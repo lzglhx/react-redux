@@ -5,7 +5,7 @@ import { addComment } from "../../store/actions";
 class CommentAdd extends Component {
   state = {
     username: "",
-    content: ""
+    content: "",
   };
 
   /**
@@ -27,17 +27,17 @@ class CommentAdd extends Component {
     //清除输入的数据
     this.setState({
       username: "",
-      content: ""
+      content: "",
     });
   };
 
-  handleNameChange = event => {
+  handleNameChange = (event) => {
     //获取input输入得得值
     const username = event.target.value;
     //更新state
     this.setState({ username });
   };
-  handleContentChange = event => {
+  handleContentChange = (event) => {
     //获取input输入得得值
     const content = event.target.value;
     //更新state

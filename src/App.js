@@ -5,9 +5,17 @@ import { getComment } from "./store/actions";
 import { connect } from "react-redux";
 
 class App extends Component {
+  state = {
+    count: 0,
+  };
+
   componentDidMount() {
     this.props.getComment();
   }
+
+  onClick = () => {
+    this.props.increase();
+  };
 
   render() {
     return (
@@ -31,4 +39,12 @@ class App extends Component {
   }
 }
 
-export default connect(null, { getComment })(App);
+const mapDispatchToProps = (dispatch) => {
+  console.log("dispatch=", dispatch);
+  return {
+    getComment: () => dispatch(getComment()),
+  };
+};
+
+const app = connect(null, mapDispatchToProps)(App);
+export default app;
